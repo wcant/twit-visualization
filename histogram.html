@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+        <script>
+            d3.json("data.json", function(error, json) {
+                if (error) return console.warn(error);
+                data = json;
+                console.log(data[0]); 
+            });
+        </script>
+
+    </body>
+</html>
